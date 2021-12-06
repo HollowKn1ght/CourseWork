@@ -1,0 +1,295 @@
+body {
+	background: #0F1215;
+	font: 16px/30px "merriweather-regular", serif;
+	font-weight: normal;
+	color: #575859;
+    margin: 0px;
+}
+body h1, h2, h3{
+    color: rgb(190, 190, 190);
+}
+body h4, h5, h6{
+    color: #b18b03;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+	display: block;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* primary navigation
+--------------------------------------------------------------------- */
+header {
+    background: black;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    z-index: 100;
+    top: 0px;
+    padding-bottom: 10px;
+}
+header ul {
+    display: inline-block;
+}
+header .logo {
+	background: #fdc501;
+	float: left;
+	width: auto;
+	margin-left: 15px;
+	margin-right: 30px;
+	
+	/* add position relative since z-index only applies to  
+	elements that have been given an explicit position */
+	position: relative;
+}
+header .logo a {
+	display: block;
+	width: 120px;
+	height: 66px;
+	background: url("https://static.thenounproject.com/png/166660-200.png") no-repeat center;
+	background-size: 110px 110px;
+}
+header .row {
+	width: 94%;
+	max-width: 1600px;
+	margin: 0 auto;
+}
+header .menu li {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+header .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font: bold;
+    padding-bottom: 20px;
+}
+header .menu li a:hover {
+    color: #fdc501;
+    border-bottom: 5px solid white;
+}
+header .header-social {
+    display: inline-block;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 66px;
+	margin-top: 0;
+	margin-left: 30px;
+	padding-left: 36px;
+	border-left: 1px solid rgba(150, 150, 150, 0.2);
+	top: -1px;
+}
+header .header-social li {
+	display: inline-block;
+	margin-right: 15px;
+}
+header .header-social li a {
+	color: #9c9c9c;
+    text-decoration: none;
+}
+
+/* content section
+--------------------------------------------------------------------- */
+#choise .amdandnvidia{
+    background: linear-gradient(to right,green,rgb(167, 10, 10));
+    padding-left: 15px;
+}
+#choise .amdandnvidia .row .column {
+    float: left;
+    width: 49%;
+    padding: 20px 5px 20px 5px;
+}
+  /* Clearfix (clear floats) */
+#choise .amdandnvidia .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#choise .amdandnvidia .row .column img{
+    width: 100%;
+    opacity: 0.15;
+}
+#choise .amdandnvidia .row .column img:hover{
+    transition: .5s ease;
+    opacity: 1;
+}
+
+#contents #amdcon, #nvidiacon {
+    display: none;
+}
+#contents {
+    width: 70%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+#contents p{
+    text-align: left;
+}
+
+
+/* footer
+--------------------------------------------------------------------- */
+#footersite p {
+    /* Footer*/
+    background-color: black;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+#footersite .formClass {
+    /* Footer*/
+    background-color: black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-areas: "a b";
+    border-top: 2px solid #1d2329;
+}
+#footersite .formClass p{
+    text-align: left;
+}
+#footersite .formClass .rowleft{
+    margin: 0 auto 0 auto;
+    text-align: center;
+    grid-area: a;
+}
+#footersite .formClass .rowright{
+    margin: 0 auto 0 auto;
+    grid-area: b;
+}
+#footersite .formClass h2{
+    margin-top: 0;
+    margin-left: 20px;
+}
+#footersite .formClass form {
+    /* Center the form on the page */
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid rgb(133, 133, 133);
+    border-radius: 1em;
+  }
+  #footersite .formClass ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#footersite .formClass form li + li {
+    margin-top: 1em;
+}
+#footersite .formClass label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+#footersite .formClass input {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+  color: #fdc501;
+
+  /* Uniform text field size */
+  width: 290px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 2px solid rgb(112, 3, 3);
+  border-radius: 1em;
+  background-color: black;
+}
+#footersite .formClass .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+}
+#footersite .formClass button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .5em;
+    border: 2px solid #fdc501;
+    border-radius: 1em;
+    background-color: #fdc501;
+}
+
+#footersite .contacts {
+    width: 350px;
+}
+#footersite .contacts h2{
+    text-align: left;
+    padding-left: 5px;
+}
+#footersite .formClass .contacts .logos {
+    margin-left: 25px;
+}
+#footersite .formClass .contacts .logos li, li li {
+    display: inline-block;
+    margin: 20px 4px 0 0;
+}
+#footersite .formClass .contacts .logos img {
+    width: 50px; 
+    height: 50px; 
+    display: inline-block;
+}
+
+
+/* mobile navigation
+--------------------------------------------------------------------- */
+@media only screen and (max-width:1370px) {
+	header .header-social {
+		display: none;
+	}
+}
+@media only screen and (max-width:1050px) {
+	#choise .amdandnvidia .row .column {
+        width: 100%;
+    }
+    #choise .amdandnvidia{
+        background: linear-gradient(to bottom,green,rgb(167, 10, 10));
+    }
+}
+@media only screen and (max-width:850px) {
+	#footersite .formClass {
+        text-align: center;
+        grid-template-areas: 
+        "a"
+        "b";
+    }
+    #footersite .formClass .rowleft{
+        padding-bottom: 50px;
+    }
+    #footersite .formClass .rowleft, .rowright{
+        margin: 0 auto 0 auto;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:825px) {
+	header {
+		background: black;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	}
+	header .row {
+		width: 100%;
+	}
+    header ul {
+        display: flex;
+        flex-flow: wrap column;
+        max-height: 150px;  
+    }
+    header ul li {
+        padding-top: 20px;
+    }
+    .slider_text {
+        width: calc(100% - 40px);
+    }
+}
