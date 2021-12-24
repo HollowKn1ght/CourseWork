@@ -111,7 +111,7 @@ header .header-social li a {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
-#tableFac .table h1{
+#tableFac h1{
     text-align: center;
 }
 #tableFac .table div {
