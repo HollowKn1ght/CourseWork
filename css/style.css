@@ -103,7 +103,7 @@ header .header-social li a {
 /* carousel section
 --------------------------------------------------------------------- */
 #carousel {
-	background: #0F1215 url("C:/Users/Dennis/htmlCodes/CourseWork/images/wall.jpg") no-repeat center;
+	background: #0F1215 url("../images/wall.jpg") no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
