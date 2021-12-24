@@ -254,6 +254,9 @@ header .header-social li a {
 	#choise .amdandnvidia .row .column {
         width: 100%;
     }
+	#choise .amdandnvidia .row .column img {
+        width: 96.5%;
+    }
     #choise .amdandnvidia{
         background: linear-gradient(to bottom,green,rgb(167, 10, 10));
     }
